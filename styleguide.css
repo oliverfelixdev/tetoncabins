@@ -1,0 +1,32 @@
+:root {
+  --color-light: #ffffff;
+  --color-dark: #472425;
+  --background-light: #f3f1ed;
+  --background-dark: #472425;
+  --background-green: #23553e;
+}
+
+@font-face {
+  font-family: "Narrow-L";
+  src: url(./src/assets/fonts/DisplayNarrowLight.woff2);
+}
+
+@font-face {
+  font-family: "Narrow-R";
+  src: url(./src/assets/fonts/DisplayNarrowRegular.woff2);
+}
+
+@font-face {
+  font-family: "Surt-M";
+  src: url(./src/assets/fonts/SurtMediumExtended.otf);
+}
+
+@font-face {
+  font-family: "Surt-R";
+  src: url(./src/assets/fonts/SurtRegularExtended.otf);
+}
+
+@font-face {
+  font-family: "Surt-B";
+  src: url(./src/assets/fonts/SurtSemiBoldExtended.otf);
+}
