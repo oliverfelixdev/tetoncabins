@@ -1,77 +1,75 @@
-@media only screen and (max-width: 768px) {
-  nav {
-    width: 100%;
-    padding: 2vw 4vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-  }
-
+@media only screen and (max-width: 425px) {
   .navigation-main {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: row-reverse;
+    padding: 2vw 0;
   }
 
   .nav-icon svg {
-    height: 3.5vw;
-    width: 3.5vw;
+    height: 3vw;
+    width: 3vw;
   }
 
   .nav-cta-wrap {
     display: none;
   }
 
-  .frame1-wrap {
-    margin-top: 10vw;
-    width: 100%;
-    max-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20vw;
+  #frame1 {
+    min-height: 105vh;
   }
 
-  /* .frame1-wrap .text-wrap{
-    background-color: red;
-} */
+  .frame1-wrap {
+    margin-top: 10vw;
+    gap: 10vw;
+  }
 
   .hero-title {
     font-family: "Narrow-R";
-    font-size: 8vw;
-    line-height: 1;
+    font-size: 9vw;
+    line-height: 1.2;
     text-align: center;
   }
 
-  .subtitle {
-    font-family: surt-R;
+  .media-wrap img {
+    height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-main {
+    flex-direction: row-reverse;
   }
 
-  .media-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3vw;
+  .nav-icon svg {
+    height: 3vw;
+    width: 3vw;
+  }
+
+  .nav-cta-wrap {
+    display: none;
+  }
+
+  .logo {
+    max-width: 30vw;
+    padding: 1vw 1vw 1vw 0;
+  }
+
+  .logo img {
+    max-height: 30px;
+  }
+
+  #frame1 {
+    min-height: 105vh;
+  }
+
+  .frame1-wrap {
+    gap: 10vw;
+  }
+
+  .hero-title {
+    font-size: 9vw;
   }
 
   .media-wrap img {
-    height: 5.5rem;
-  }
-
-  .overlay-frame1 {
-    height: 100%;
-    width: 100%;
-    background-color: #00000047;
-    position: absolute;
-    z-index: 2;
+    height: 5rem;
   }
 }
