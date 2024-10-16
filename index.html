@@ -4,66 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cabin Cards</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleguide.css">
-    <link rel="stylesheet" href="./src/public/media.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-image: url('./assets/9024.avif');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-wrap {
+            backdrop-filter: blur(20px);
+            height: 95%;
+            width: 97.5%;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 450px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .card-content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .card-content h2 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <div class="main-wrap bg-zinc-300">
-            <header>
-                <nav class="nav-bar">
-                    <div class="navigation-main">
-                        <button class="menu-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24"
-                                stroke-width="1.9" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-                            </svg>
-                        </button>
-                        <div class="logo">
-                            <a href="index.html" class="logo-anchor">
-                                <img src="./src/assets/images/logo.svg" alt="not found">
-                            </a>
-                        </div>
-                        <div class="nav-cta-wrap">
-                            <button class="nav-cta-btn">Book Your Stay</button>
-                        </div>
-                    </div>
-                    <!-- <div class="navigation-mobile"></div> -->
-                </nav>
-            </header>
-            <section id="frame1">
-                <div class="frame1-wrap">
-                    <div class="text-wrap">
-                        <h1 class="hero-title">Jackson Hole<br>Log Cabin Retreat</h1>
-                        <p class="primary_subtitle text-xs text-center mt-10">Your Gateway to Grand Teton and<br>Yellowstone
-                            National Parks</p>
-                    </div>
-                    <div class="media-wrap">
-                        <img src="./src/assets/images/award2021.svg" alt="not found" class="award-image award-image-1">
-                        <img src="./src/assets/images/award2022.svg" alt="not found" class="award-image award-image-2">
-                        <img src="./src/assets/images/award2023.svg" alt="not found" class="award-image award-image-3">
-                        <img src="./src/assets/images/awars2024.svg" alt="not found" class="award-image award-image-4">
-                    </div>
+        <div class="main-wrap">
+            <!-- Cabin Card 1 -->
+            <div class="card">
+                <img src="./assets/9023.avif" alt="Cabin 1">
+                <div class="card-content">
+                    <h2>Cabin in the Woods</h2>
+                    <p>Experience a serene getaway in this cozy cabin surrounded by nature.</p>
                 </div>
-                <div class="overlay-frame1"></div>
-            </section>
-            <section id="frame2">
-                <div class="frame2-wrap">
-                    <div class="fr2-media">
-                        <img src="./src/assets/images/1045.jpg" alt="not found">
-                    </div>
-                    <div class="fr2-narrative">
-                        <h2 class="primary_title w-72">Experience the Grandeur of the West</h2>
-                        <p class="primary_subtitle w-72 mt-5">Cradled in the lap of the Grand Tetons and Yellowstone, Teton Cabins provide an idyllic basecamp in the heart of Jackson Hole. Whether you are seeking adventure or a quiet escape, you will find it here.</p>
-                    </div>
+            </div>
+
+            <!-- Cabin Card 2 -->
+            <div class="card">
+                <img src="./assets/9022.avif" alt="Cabin 2">
+                <div class="card-content">
+                    <h2>Mountain Retreat</h2>
+                    <p>Enjoy breathtaking mountain views and luxurious interiors.</p>
                 </div>
-            </section>
+            </div>
+
+            <!-- Cabin Card 3 -->
+            <div class="card">
+                <img src="./assets/9021.avif" alt="Cabin 3">
+                <div class="card-content">
+                    <h2>Lakeside Cabin</h2>
+                    <p>Relax by the lake in this charming, rustic lakeside cabin.</p>
+                </div>
+            </div>
         </div>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 
